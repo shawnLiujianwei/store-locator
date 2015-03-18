@@ -1,0 +1,170 @@
+{
+  "scrapecache": {
+    "db": {
+      "db": "storeLocator",
+      "host": "127.0.0.1",
+      "port": 27017
+    }
+  },
+  "listener": {
+    "port": 8581,
+    "memoryUsage": 0.90,
+    "failureRate": {
+      "rate": 0.20,
+      "proceed": 200
+    }
+  },
+  "schedule": {},
+  "ports": [
+    8391,
+    8392
+  ],
+  "casper": {
+    "logLevel": "debug",
+    "logFile": "./casper.log",
+    "timeout": 1200000,
+    "failureRate": {
+      "rate": 0.15,
+      "proceed": 200
+    }
+  },
+  "maxQueueSize": 100,
+  "maxWorkerJobs": 1000,
+  "maxWorkerLifetime": 7200,
+  "maxTimeoutTimes": 5,
+  "nodeLog": {
+    "configuration": {
+      "appenders": [
+        {
+          "type": "console"
+        }
+      ],
+      "levels": {
+        "[all]": "debug"
+      },
+      "replaceConsole": true
+    }
+  },
+  "countryMap": {
+    "en_us": "United States"
+  },
+  "locatorMap": {
+    "en_us": {
+      "target.com": {
+        "searchUrl": "http://www.target.com/store-locator/find-stores?lnk=findstore_breadcrumb_findstore",
+        "urls": [
+          "http://www.target.com/store-locator/state-result?stateCode=AL",
+          "http://www.target.com/store-locator/state-result?stateCode=AK",
+          "http://www.target.com/store-locator/state-result?stateCode=AZ",
+          "http://www.target.com/store-locator/state-result?stateCode=AR",
+          "http://www.target.com/store-locator/state-result?stateCode=CA",
+          "http://www.target.com/store-locator/state-result?stateCode=CO",
+          "http://www.target.com/store-locator/state-result?stateCode=CT",
+          "http://www.target.com/store-locator/state-result?stateCode=DE",
+          "http://www.target.com/store-locator/state-result?stateCode=FL",
+          "http://www.target.com/store-locator/state-result?stateCode=GA",
+          "http://www.target.com/store-locator/state-result?stateCode=HI&stateName=Hawaii",
+          "http://www.target.com/store-locator/state-result?stateCode=ID",
+          "http://www.target.com/store-locator/state-result?stateCode=IL",
+          "http://www.target.com/store-locator/state-result?stateCode=IN",
+          "http://www.target.com/store-locator/state-result?stateCode=IA",
+          "http://www.target.com/store-locator/state-result?stateCode=KS",
+          "http://www.target.com/store-locator/state-result?stateCode=KY",
+          "http://www.target.com/store-locator/state-result?stateCode=LA",
+          "http://www.target.com/store-locator/state-result?stateCode=ME",
+          "http://www.target.com/store-locator/state-result?stateCode=MD",
+          "http://www.target.com/store-locator/state-result?stateCode=MI",
+          "http://www.target.com/store-locator/state-result?stateCode=MN",
+          "http://www.target.com/store-locator/state-result?stateCode=MS",
+          "http://www.target.com/store-locator/state-result?stateCode=MO",
+          "http://www.target.com/store-locator/state-result?stateCode=NE",
+          "http://www.target.com/store-locator/state-result?stateCode=NV",
+          "http://www.target.com/store-locator/state-result?stateCode=NH",
+          "http://www.target.com/store-locator/state-result?stateCode=NJ",
+          "http://www.target.com/store-locator/state-result?stateCode=NM",
+          "http://www.target.com/store-locator/state-result?stateCode=NY",
+          "http://www.target.com/store-locator/state-result?stateCode=NC",
+          "http://www.target.com/store-locator/state-result?stateCode=ND",
+          "http://www.target.com/store-locator/state-result?stateCode=OH",
+          "http://www.target.com/store-locator/state-result?stateCode=OK",
+          "http://www.target.com/store-locator/state-result?stateCode=OR",
+          "http://www.target.com/store-locator/state-result?stateCode=PA",
+          "http://www.target.com/store-locator/state-result?stateCode=RI",
+          "http://www.target.com/store-locator/state-result?stateCode=SC",
+          "http://www.target.com/store-locator/state-result?stateCode=SD",
+          "http://www.target.com/store-locator/state-result?stateCode=TN",
+          "http://www.target.com/store-locator/state-result?stateCode=TX",
+          "http://www.target.com/store-locator/state-result?stateCode=UT",
+          "http://www.target.com/store-locator/state-result?stateCode=VA",
+          "http://www.target.com/store-locator/state-result?stateCode=WA",
+          "http://www.target.com/store-locator/state-result?stateCode=DC",
+          "http://www.target.com/store-locator/state-result?stateCode=WV",
+          "http://www.target.com/store-locator/state-result?stateCode=WI",
+          "http://www.target.com/store-locator/state-result?stateCode=WY",
+          "http://www.target.com/store-locator/state-result?stateCode=VT"
+        ],
+        "valid": true
+      },
+      "walmart.com": {
+        "searchUrl": "",
+        "urls": [
+          "http://www.walmart.com/store/finder?location=al&distance=1000",
+          "http://www.walmart.com/store/finder?location=ak&distance=1000",
+          "http://www.walmart.com/store/finder?location=az&distance=1000",
+          "http://www.walmart.com/store/finder?location=ar&distance=1000",
+          "http://www.walmart.com/store/finder?location=ca&distance=1000",
+          "http://www.walmart.com/store/finder?location=co&distance=1000",
+          "http://www.walmart.com/store/finder?location=ct&distance=1000",
+          "http://www.walmart.com/store/finder?location=de&distance=1000",
+          "http://www.walmart.com/store/finder?location=fl&distance=1000",
+          "http://www.walmart.com/store/finder?location=ga&distance=1000",
+          "http://www.walmart.com/store/finder?location=hi&distance=1000",
+          "http://www.walmart.com/store/finder?location=id&distance=1000",
+          "http://www.walmart.com/store/finder?location=il&distance=1000",
+          "http://www.walmart.com/store/finder?location=in&distance=1000",
+          "http://www.walmart.com/store/finder?location=ia&distance=1000",
+          "http://www.walmart.com/store/finder?location=ks&distance=1000",
+          "http://www.walmart.com/store/finder?location=ky&distance=1000",
+          "http://www.walmart.com/store/finder?location=la&distance=1000",
+          "http://www.walmart.com/store/finder?location=me&distance=1000",
+          "http://www.walmart.com/store/finder?location=md&distance=1000",
+          "http://www.walmart.com/store/finder?location=ma&distance=1000",
+          "http://www.walmart.com/store/finder?location=mi&distance=1000",
+          "http://www.walmart.com/store/finder?location=mn&distance=1000",
+          "http://www.walmart.com/store/finder?location=ms&distance=1000",
+          "http://www.walmart.com/store/finder?location=mo&distance=1000",
+          "http://www.walmart.com/store/finder?location=ne&distance=1000",
+          "http://www.walmart.com/store/finder?location=nv&distance=1000",
+          "http://www.walmart.com/store/finder?location=nh&distance=1000",
+          "http://www.walmart.com/store/finder?location=nj&distance=1000",
+          "http://www.walmart.com/store/finder?location=nm&distance=1000",
+          "http://www.walmart.com/store/finder?location=ny&distance=1000",
+          "http://www.walmart.com/store/finder?location=nc&distance=1000",
+          "http://www.walmart.com/store/finder?location=nd&distance=1000",
+          "http://www.walmart.com/store/finder?location=oh&distance=1000",
+          "http://www.walmart.com/store/finder?location=ok&distance=1000",
+          "http://www.walmart.com/store/finder?location=or&distance=1000",
+          "http://www.walmart.com/store/finder?location=pa&distance=1000",
+          "http://www.walmart.com/store/finder?location=ri&distance=1000",
+          "http://www.walmart.com/store/finder?location=sc&distance=1000",
+          "http://www.walmart.com/store/finder?location=sd&distance=1000",
+          "http://www.walmart.com/store/finder?location=tn&distance=1000",
+          "http://www.walmart.com/store/finder?location=tx&distance=1000",
+          "http://www.walmart.com/store/finder?location=ut&distance=1000",
+          "http://www.walmart.com/store/finder?location=va&distance=1000",
+          "http://www.walmart.com/store/finder?location=wa&distance=1000",
+          "http://www.walmart.com/store/finder?location=dc&distance=1000",
+          "http://www.walmart.com/store/finder?location=wv&distance=1000",
+          "http://www.walmart.com/store/finder?location=wi&distance=1000",
+          "http://www.walmart.com/store/finder?location=wy&distance=1000",
+          "http://www.walmart.com/store/finder?location=vt&distance=1000"
+        ],
+        "valid": true
+      }
+    }
+  },
+  "background": {
+    "enable": false,
+    "job": "0 0 0 * * *"
+  }
+}

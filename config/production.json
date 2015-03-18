@@ -1,0 +1,57 @@
+{
+  "scrapecache": {
+    "enabled": true,
+    "validity": 36,
+    "db": {
+      "db": "storeLocator",
+      "host": "data-eu.dotter.me",
+      "port": 3282,
+      "username": "scrapecache",
+      "password": "speedmeup"
+    }
+  },
+  "ports": [
+    8391,
+    8392
+  ],
+  "casper": {
+    "logLevel": "error",
+    "logFile": "./casper.log"
+  },
+  "nodeLog": {
+    "configuration": {
+      "appenders": [
+        {
+          "type": "console"
+        },
+        {
+          "type": "dateFile",
+          "filename": "/home/ubuntu/logs/nrs-output.log",
+          "pattern": "-yyyy-MM-dd",
+          "alwaysIncludePattern": true,
+          "backups": 10
+        },
+        {
+          "type": "logLevelFilter",
+          "level": "WARN",
+          "appender": {
+            "type": "dateFile",
+            "filename": "/home/ubuntu/logs/nrs-warn-error.log",
+            "pattern": "-yyyy-MM-dd",
+            "alwaysIncludePattern": true,
+            "backups": 10,
+            "level": "debug"
+          }
+        }
+      ],
+      "levels": {
+        "[all]": "info"
+      },
+      "replaceConsole": true
+    }
+  },
+  "background": {
+    "enable": true,
+    "job": "0 0 0 * * *"
+  }
+}
