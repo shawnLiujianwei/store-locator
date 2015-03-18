@@ -9,6 +9,7 @@ var ErrorHandler = require("../errors");
 var storeService = require("./stores");
 var locatorService = require("./locator.service");
 var async = require("async");
+var _ = require("lodash");
 exports.searchFromDB = function (req, res) {
     var locale = req.params.locale;
     var retailer = req.params.retailer;
@@ -107,6 +108,7 @@ function _setupCronJob() {
                 }
             });
         });
+        jobs = _.shuffle(jobs);
         async.until(function isDone() {
             return jobs.length === 0;
         }, function next(callback) {
@@ -139,8 +141,6 @@ function _setupCronJob() {
 //    ]
 //}
 var _handleScrapedResults = function (locale, retailer, scraedResults) {
-    logger.warn(scraedResults);
-
     return new Promise(function (resolve, reject) {
         var promise = Promise.resolve();
         if (scraedResults && scraedResults.status) {
