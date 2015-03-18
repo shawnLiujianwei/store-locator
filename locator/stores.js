@@ -24,6 +24,8 @@
 //        "openTimes": [""]
 //    }
 //}
+
+var logger = require("node-config-logger").getLogger("locator/store.js");
 function Store(locale, retailer, geoObj, summary) {
 
     this.locale = locale;
